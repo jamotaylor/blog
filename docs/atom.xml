@@ -5,9 +5,9 @@
   <subtitle>Developer // Designer</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://blog.newtonworkshop.com/"/>
   <updated>2019-02-05T14:50:06.522Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://blog.newtonworkshop.com/</id>
   
   <author>
     <name>James Newton Taylor</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Serializing *Specified Fields in .NET</title>
-    <link href="http://yoursite.com/2019/02/04/serializing-specified-fields/"/>
-    <id>http://yoursite.com/2019/02/04/serializing-specified-fields/</id>
+    <link href="http://blog.newtonworkshop.com/2019/02/04/serializing-specified-fields/"/>
+    <id>http://blog.newtonworkshop.com/2019/02/04/serializing-specified-fields/</id>
     <published>2019-02-04T13:08:00.000Z</published>
     <updated>2019-02-05T14:50:06.522Z</updated>
     
@@ -34,19 +34,19 @@
     
     </summary>
     
-      <category term="Dev" scheme="http://yoursite.com/categories/Dev/"/>
+      <category term="Dev" scheme="http://blog.newtonworkshop.com/categories/Dev/"/>
     
     
-      <category term="c#" scheme="http://yoursite.com/tags/c/"/>
+      <category term="c#" scheme="http://blog.newtonworkshop.com/tags/c/"/>
     
-      <category term="serialization" scheme="http://yoursite.com/tags/serialization/"/>
+      <category term="serialization" scheme="http://blog.newtonworkshop.com/tags/serialization/"/>
     
   </entry>
   
   <entry>
     <title>Yes, sir. That&#39;s what serialization is and that&#39;s why it&#39;s such an important concept because pecans serialize an object data from one machine to another joke about a database.</title>
-    <link href="http://yoursite.com/2019/01/28/speech-to-text-test/"/>
-    <id>http://yoursite.com/2019/01/28/speech-to-text-test/</id>
+    <link href="http://blog.newtonworkshop.com/2019/01/28/speech-to-text-test/"/>
+    <id>http://blog.newtonworkshop.com/2019/01/28/speech-to-text-test/</id>
     <published>2019-01-28T17:35:13.000Z</published>
     <updated>2019-02-04T13:31:58.210Z</updated>
     
@@ -61,12 +61,12 @@
     
     </summary>
     
-      <category term="Dev" scheme="http://yoursite.com/categories/Dev/"/>
+      <category term="Dev" scheme="http://blog.newtonworkshop.com/categories/Dev/"/>
     
     
-      <category term="c#" scheme="http://yoursite.com/tags/c/"/>
+      <category term="c#" scheme="http://blog.newtonworkshop.com/tags/c/"/>
     
-      <category term="random" scheme="http://yoursite.com/tags/random/"/>
+      <category term="random" scheme="http://blog.newtonworkshop.com/tags/random/"/>
     
   </entry>
   
