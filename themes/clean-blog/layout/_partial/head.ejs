@@ -59,7 +59,7 @@
         } else if (config.cover) {
             image = config.cover;
         } else if (theme.index_cover) {
-            image = theme.index_cover;
+            image = config.url + theme.index_cover;
         }
     %>
     <% if (image) { %>
