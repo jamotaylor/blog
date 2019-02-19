@@ -42,7 +42,7 @@
     <!--Page Cover-->
     
     
-        <meta property="og:image" content="https://jamotaylor.github.io/bloghttps://jamotaylor.github.io/blog/img/blog_main_bg.png">
+        <meta property="og:image" content="blog.newtonworkshop.comblog.newtonworkshop.com/img/blog_main_bg.png">
     
 
         <meta name="twitter:card" content="summary_large_image">
@@ -50,7 +50,7 @@
     
 
     
-        <meta name="twitter:image" content="https://jamotaylor.github.io/bloghttps://jamotaylor.github.io/blog/img/blog_main_bg.png">
+        <meta name="twitter:image" content="blog.newtonworkshop.comblog.newtonworkshop.com/img/blog_main_bg.png">
     
 
     <!-- Title -->
@@ -61,7 +61,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/blog/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -102,7 +102,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-						<a class="navbar-brand" href="/blog/">James Newton Taylor</a>
+						<a class="navbar-brand" href="/">James Newton Taylor</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -110,7 +110,7 @@
             <ul class="nav navbar-nav navbar-right">
                 
                     <li>
-                        <a href="/blog/">
+                        <a href="/">
                             
                                 Home
                             
@@ -118,7 +118,7 @@
                     </li>
                 
                     <li>
-                        <a href="/blog/archives">
+                        <a href="/archives">
                             
                                 Archives
                             
@@ -126,7 +126,7 @@
                     </li>
                 
                     <li>
-                        <a href="/blog/tags">
+                        <a href="/tags">
                             
                                 Tags
                             
@@ -134,7 +134,7 @@
                     </li>
                 
                     <li>
-                        <a href="/blog/categories">
+                        <a href="/categories">
                             
                                 Categories
                             
@@ -152,7 +152,7 @@
     <!-- Page Header -->
 <!-- Set your background image for this header in your post front-matter: cover -->
 
-<header class="intro-header" style="background-image: url('https://jamotaylor.github.io/blog/img/blog_main_bg.png')">
+<header class="intro-header" style="background-image: url('blog.newtonworkshop.com/img/blog_main_bg.png')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -184,7 +184,7 @@
                         
 
 
-<a href="/blog/tags/c/">#c#</a> <a href="/blog/tags/random/">#random</a>
+<a href="/tags/c/">#c#</a> <a href="/tags/random/">#random</a>
 
 
                     
@@ -193,7 +193,7 @@
                     
                         
 
-<a href="/blog/categories/Dev/">Dev</a>
+<a href="/categories/Dev/">Dev</a>
 
                     
                 </div>
@@ -221,16 +221,16 @@
 </ul>
 <h4 id="4-Enable-the-Cloud-Speech-API"><a href="#4-Enable-the-Cloud-Speech-API" class="headerlink" title="4. Enable the Cloud.Speech API"></a>4. Enable the Cloud.Speech API</h4><h4 id="5-Add-credentials-to-the-Cloud-Speech-API"><a href="#5-Add-credentials-to-the-Cloud-Speech-API" class="headerlink" title="5. Add credentials to the Cloud.Speech API"></a>5. Add credentials to the Cloud.Speech API</h4><h4 id="6-Download-your-credentials-as-a-JSON-file"><a href="#6-Download-your-credentials-as-a-JSON-file" class="headerlink" title="6. Download your credentials as a JSON file"></a>6. Download your credentials as a JSON file</h4><h4 id="7-Create-default-credentials-on-your-machine"><a href="#7-Create-default-credentials-on-your-machine" class="headerlink" title="7. Create default credentials on your machine"></a>7. Create default credentials on your machine</h4><p>Once you have your credentials, you need to create a environment variable that’s points the the location of the JSON file which contains your keys. They do tell you how to do this on the <a href="https://cloud.google.com/docs/authentication/getting-started" target="_blank" rel="noopener">Google Cloud docs</a>, but that didn’t work for me on my Windows 10 machine.</p>
 <p>Instead, hit the Start key and search for “environment” - then open up the Environment Variables UI. Under the section “User Variables for [user name]” click “New…”</p>
-<img src="/blog/2019/01/28/speech-to-text-test/google-cloud-enviro-window.png">
+<img src="/2019/01/28/speech-to-text-test/google-cloud-enviro-window.png">
 <p>Add a variable named “GOOGLE_APPLICATION_CREDENTIALS” then click the “Browse File…” button and browse to the JSON file you’ve just downloaded.</p>
-<img src="/blog/2019/01/28/speech-to-text-test/google-cloud-enviro-new.png">
+<img src="/2019/01/28/speech-to-text-test/google-cloud-enviro-new.png">
 <h2 id="The-Code"><a href="#The-Code" class="headerlink" title="The Code"></a>The Code</h2><p>Now that your default credentials are loaded on your machine, you can go ahead and start writing you Unit Tests. I created a *<em>.NET Standard Class Library</em> and a <em>MSTest</em> project.  The code is really straightforward.</p>
 <p>If you’re trying to do recognition on a large file like mine with more than 1 minute of audio then you will need to upload the file to your cloud storage. <a href="https://cloud.google.com/speech-to-text/quotas" target="_blank" rel="noopener">Read this</a> for the allowed quotas, especially the line: <em>“Audio longer than ~1 minute must use the uri field to reference an audio file in Google Cloud Storage.”</em></p>
 <p>As you can see in the code below, I had to use the <em>LongRunningRecognize</em> method because of the file length, and I’m using the <em>FromStorageUri</em> method to retrieve the file from my cloud storage.</p>
 <p>Notice the <em>EnableAutomaticPunctuation</em> property in the <em>RecognitionConfig</em> is set <em>true</em> - as mentioned before, this is only available in the beta.</p>
 <p>Now you have to match your audio file type to the <em>RecognitionConfig.Encoding</em> type, and there are only <a href="https://cloud.google.com/speech-to-text/docs/encoding" target="_blank" rel="noopener">some formats</a> that the API supports.  I chose .flac basically because it’s first on the list.</p>
 <p>I used <a href="https://audio.online-convert.com/convert-to-flac" target="_blank" rel="noopener">this service</a> to convert my MP3 to Flac and it worked really well.</p>
-<img src="/blog/2019/01/28/speech-to-text-test/convert-flac.png">
+<img src="/2019/01/28/speech-to-text-test/convert-flac.png">
 <p>Use the <em>Change the bit resolution</em> to set the bitrate to something compatible - either 16 or 24 bit. I have no idea what the sampling rate is for so I just chose 16000 Hz. Also, the API seems to only work with <em>mono</em> audio - so use the <em>Change audio channels</em> option there too.</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Text;</span><br><span class="line"><span class="keyword">using</span> Google.Cloud.Speech.V1;</span><br><span class="line"><span class="keyword">using</span> Google.LongRunning;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">static</span> Google.Cloud.Speech.V1.RecognitionConfig.Types;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">SpeechRecordingToText</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">SpeechToTextTest</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">string</span> <span class="title">LongSpeechRecognitionTest</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">      <span class="keyword">var</span> audio = RecognitionAudio.FromStorageUri(<span class="string">"gs://jnt-dev-speech-to-text/what is programming 2.flac"</span>);</span><br><span class="line"></span><br><span class="line">      SpeechClient client = SpeechClient.Create();</span><br><span class="line">      RecognitionConfig config = <span class="keyword">new</span> RecognitionConfig</span><br><span class="line">      &#123;</span><br><span class="line">        Encoding = AudioEncoding.Flac,</span><br><span class="line">        SampleRateHertz = <span class="number">16000</span>,</span><br><span class="line">        LanguageCode = LanguageCodes.English.UnitedStates,</span><br><span class="line">        EnableAutomaticPunctuation = <span class="literal">true</span>,</span><br><span class="line">      &#125;;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">var</span> operation = client.LongRunningRecognize(config, audio);</span><br><span class="line"></span><br><span class="line">      operation = operation.PollUntilCompleted();</span><br><span class="line"></span><br><span class="line">      LongRunningRecognizeResponse response = operation.Result;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">var</span> sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">      <span class="keyword">foreach</span> (<span class="keyword">var</span> r <span class="keyword">in</span> response.Results)</span><br><span class="line">      &#123;</span><br><span class="line">        sb.Append(r.Alternatives[<span class="number">0</span>].Transcript);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> sb.ToString();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="Unit-Test"><a href="#Unit-Test" class="headerlink" title="Unit Test"></a>Unit Test</h4><p><strong>Make sure you that are running your unit tests (or IDE) as the user that you loaded the Environment Variable for, otherwise the automatic credentials won’t work.</strong></p>
