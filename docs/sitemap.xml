@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.newtonworkshop.com/2019/02/25/sa-game-jam-2018/</loc>
+    
+    <lastmod>2019-03-04T19:28:34.819Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.newtonworkshop.com/2019/02/04/serializing-specified-fields/</loc>
+    
+    <lastmod>2019-02-22T15:24:54.261Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.newtonworkshop.com/categories/index.html</loc>
     
     <lastmod>2019-02-05T14:57:29.166Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://blog.newtonworkshop.com/tags/index.html</loc>
     
     <lastmod>2019-02-05T14:57:23.318Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.newtonworkshop.com/2019/02/04/serializing-specified-fields/</loc>
-    
-    <lastmod>2019-02-05T14:50:06.522Z</lastmod>
     
   </url>
   
