@@ -12,7 +12,7 @@ If you want to skip all the detail and get to the juicy bits with a **video** an
 Someone from the [Make Games SA forum](http://makegamessa.com/) organized a venue for the weekend.  It was on the 25th and top floor of an old apartheid-era office building composed of face-brick and concrete, that looks like it was once a fortress protecting government secrets, but is now occupied by a few hipster startups - like the friendly dudes that hosted us - thank you [New Reality](https://newreality.co.za/) for all the coffee and beer!!!
 
 {% asset_img 25-owl-street-view.jpg No 25 Owl Street View %}
-> There was an great view awaiting if you needed to get out for some air.
+> There was a great view awaiting if you needed to get out for some air.
 
 We arrived on Friday from all corners of Johannesburg and proceeded to meet people who we may or may not have bumped into on the forums. The theme was announced at 6pm: Escalating Possibilities, and we all set about wracking our brains and offering strong opinions on our interpretations (and why our interpretation was the right one). The game jam hosts - [Free Lives](https://freelives.net/) - released a [not-so-short video clip](https://youtu.be/Kr9ndYeE_s4) to explain the theme if you want to check it out here.
 
@@ -50,6 +50,9 @@ From the moment I started coding it was hard to go to bed - partly for fear of n
 
 {% youtube 4E9M1mzXz18 %}
 
+----
+<br>
+
 ## The Finished Entry
 
 After all that, I didn't make the Sunday evening cut-off, and so the following day, amidst watching the kids in the garden, changing nappies and etc., I did manage to submit a 3-day entry with a [playable version of the game](https://jamotaylor.itch.io/cannon-bowls-sa-game-jam-2018).
@@ -57,6 +60,9 @@ After all that, I didn't make the Sunday evening cut-off, and so the following d
 Here is a short gameplay video of the final thing:
 
 {% youtube OsUEctoJolU %}
+
+----
+<br>
 
 ## What I Learnt
 
