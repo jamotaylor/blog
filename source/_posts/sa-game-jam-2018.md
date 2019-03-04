@@ -41,6 +41,9 @@ I liked the random rewards so that players had a different game experience in ea
 
 One of the funnier things that ended up happening is that my overpowered cannon would flatten about 1000 skittles and all these skittles would then lie around on the floor, making it impossible to actually play the game. I had to do some clever but terrible code to allow standing skittles to push past "dead" ones. Then, at the last minute I had to implement *The Amazing Rotating Floor* to clear all the skittles from the previous wave. I quite like how this looks, it ended up giving the game a little character.
 
+{% asset_img bowling-pin-mess.jpg %}
+> Bowling pins filling up the floor space
+
 [//]: # (Include pics of cluttered floor and rotating floor gif.)
 
 From the moment I started coding it was hard to go to bed - partly for fear of not finishing, and partly because it was so rewarding to see the progress.  I spent about 43 (check hours) hours that weekend developing the game - and I captured my screen throughout the process. Here is the video of my development - which can be a bit boring in parts... at least I find it interesting 😉
