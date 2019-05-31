@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "DynamicPather",
+"dataUrl": "SimpleSeeker_v0.1.0_Demo.data.unityweb",
+"wasmCodeUrl": "SimpleSeeker_v0.1.0_Demo.wasm.code.unityweb",
+"wasmFrameworkUrl": "SimpleSeeker_v0.1.0_Demo.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
